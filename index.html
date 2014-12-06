@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>App</title>
+<link href="taskathand.css" rel="StyleSheet" />
+<script src="lib/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="taskathand.js" type="text/javascript"></script>
+	<script src="appStorage.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="app">
+<header>Task@hand</header>
+<div id="main">
+	<label for="new-task-name">Add a Task</label>
+	<input type="text" id="new-task-name" title="Enter a Task Name" placeholder="Enter a Task Name"/>
+	
+	</div>
+	<ul id="task-list">
+	
+	
+	
+	</ul>
+<footer></footer>
+</div>
+	<div id="templates" class="hidden">
+<ul id="task-template">
+<li class="task">
+	<div class="tools">
+<button class="delete" title="Delete">X</button>
+<button class="move-up" title="Up">^</button>
+<button class="move-down" title="Down">v</button>
+</div>
+<span class="task-name"></span>
+<input type="text" class="task-name hidden"/>
+</li>
+</ul>
+</div>
+</body>
+</html>
