@@ -1,10 +1,12 @@
 body
 {
-font: 1em Verdana, Geneva, sans-serif;
+font: 1em arial, Geneva, sans-serif;
 padding: 0;
 margin: 5px;
 color: Black;
-background-color: WhiteSmoke;
+background: #000;
+margin-top: 20px;
+     
 }
 div
 {
@@ -21,25 +23,24 @@ display: none;
 }
 #app
 {
-margin: 4px;
+    width: 50%;
+    margin: 0 auto;
 background-color: #bbc;
-background: -webkit-linear-gradient(top, #bbc, #558);
-background: -moz-linear-gradient(top, #bbc, #558);
-background: -ms-linear-gradient(top, #bbc, #558);
-background: linear-gradient(top, #bbc, #558);
+background: #6699FF;
 }
 #app>header
 {
 padding: 0 0.5em;
-font-size: 1.5em;
-color: WhiteSmoke;
-background-color: #006;
+color: #fff;
+background-color: #FF6600;
+font: normal 16px/25px arial;
 }
 #app>footer
 {
 padding: 0.25em;
-color: WhiteSmoke;
-background-color: #006;
+color: #fff;
+background-color: #FF6600;
+    font: normal 16px/25px arial;
 }
 #main
 {
@@ -48,22 +49,36 @@ min-width: 9em;
 margin: 1em auto;
 }
 .hidden { display: none; }
+#task-list {
+    width: 90%;
+    margin: 0 auto;
+        padding: 0;
+    margin-bottom: 10px;
+}
 
 #task-list .task .tools
 {
-position: absolute;
-top: 0.25em;
-right: 0.25em;
-border: 1px solid black;
-border-radius: 2px;
+      position: absolute;
+    top: 3px;
+    right: 3px;
+    background: #fff;
+    padding: 3px;
 }
 #task-list .task .tools button
 {
-margin: 0;
 padding: 0;
-width: 1.25em;
-height: 1.25em;
-border: none;
+    width: 15px;
+    height: 15px;
+    border: none;
+    margin: 0px;
+    display: block;
+    float: left;
+    background: #E1D4C0;
+    margin-right: 5px;
+}
+#task-list .task .tools button:last-child
+{
+    margin-right: 0px;
 }
 
 #task-name
@@ -78,7 +93,14 @@ position: relative;
 list-style: none;
 padding: 0.25em;
 margin: 0.25em;
-background-color: beige;
-border-radius: 4px;
-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+background-color: #154890;
+    color: #fff;
+    font: normal 12px/20px arial;
+    padding: 5px;
+}
+input {
+    width:200px;
+    height: 30px;
+    border:0px;
+    padding-left: 5px;
 }
